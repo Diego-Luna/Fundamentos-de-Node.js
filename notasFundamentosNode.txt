@@ -45,3 +45,9 @@ Nos ayuda con node, en produccon por que nos da una vicion mas clara del proyect
 
 ///////////////////////////////// Herramientas para ser más felices: Nodemon y PM2 /////////////////////////////////
 
+///////////////////////////////// Callbacks /////////////////////////////////
+ES IMPORTANTISIMO ENCADENARLAS,
+QUE EL CALLBACK DE CADA FUNCION SEA LLAMAR A LA SIGUIENTE FUNCION Y ASI SUCESIVAMENTE!
+
+///////////////////////////////// Callbacks /////////////////////////////////
+
