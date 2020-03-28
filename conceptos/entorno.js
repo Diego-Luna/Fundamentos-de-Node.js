@@ -14,3 +14,5 @@ console.log(lista);
 
 console.log('Hola ' + nombre);
 console.log('Mi web es: ' + web);
+
+console.log("iniciamos con nodemon");

@@ -1,4 +1,4 @@
-// Node es multi ilos en el ejemlo de avajo primero ejecuta los "log" y luego va por el "setInterval"
+// Node es multi ilos en el ejemlo de avajo primero ejecuta los "log" y luego va por el "setInterval  "
 // 
 // para poner no andar en la terminal ponemos "node (nombre del archivo)"
 
@@ -16,5 +16,5 @@ setInterval( function () {
   // }
 }, 1000); 
 
-console.log("Segunda instrucción");
+console.log("Segunda instrucción!!");
 

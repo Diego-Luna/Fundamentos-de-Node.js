@@ -25,3 +25,23 @@ el archivo .env deve estar en la raiz del proyecto.
 -------
 
 ///////////////////////////////// Variables de entorno /////////////////////////////////
+
+///////////////////////////////// Herramientas para ser más felices: Nodemon y PM2 /////////////////////////////////
+
+nodemon Link:https://nodemon.io/
+
+Nos ayuda apoder ejecutar el codigo de node miestras estas mos en desarrollo, cada ves que guardemos se ejecutara el programa.
+PAra poder lo usar :(en la terminal)
+- nodemon (nombre del arvhivo / o la direccion)
+
+pm2 Link :https://pm2.keymetrics.io/
+
+Nos ayuda con node, en produccon por que nos da una vicion mas clara del proyecto :
+
+- pm2 start
+
+- pm2 status
+- pm2 log
+
+///////////////////////////////// Herramientas para ser más felices: Nodemon y PM2 /////////////////////////////////
+
