@@ -1,0 +1,27 @@
+///////////////////////////////// Variables de entorno /////////////////////////////////
+
+Las variables de entorno son las variables que vienen desde fuera del sistema y se pueden referenciar con “process.env.VARIABLE”, estas deben ir con MAYÚSCULAS.
+
+-------
+EL linkd e dotenv: https://www.npmjs.com/package/dotenv
+Para descargarlo:
+- npm install dotenv
+
+
+En caso de querer tener variables de entorno en un archivo, puede utilizar dotenv, de esta manera puede crear el archivo .env y ahí configurar las variables necesarias.
+Y luego accederlas donde las necesite, ejemplo:
+
+file.js:
+- require('dotenv').config();
+- console.log(process.env.NAME);
+
+.env
+- NAME = 'u name'
+
+Se suele utilizar mucho para variables de bases de datos, usuarios, etc.
+Y en caso de usar variables con información sensible, tener en cuenta nunca enviar el archivo .env al repositorio (:
+el archivo .env deve estar en la raiz del proyecto.
+
+-------
+
+///////////////////////////////// Variables de entorno /////////////////////////////////
