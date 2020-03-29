@@ -52,3 +52,21 @@ QUE EL CALLBACK DE CADA FUNCION SEA LLAMAR A LA SIGUIENTE FUNCION Y ASI SUCESIVA
 
 ///////////////////////////////// Callbacks /////////////////////////////////
 
+///////////////////////////////// funcion es recursivas /////////////////////////////////
+
+Una funcion recursiva nos funciona para no sufrir con los Callbacks:
+ejemplo:
+
+- function conversacion(nombre, veses,callback){
+-   if (veses > 0){
+-     Hablar(function () {
+-       conversacion(nombre, --veses, callback);
+-     })
+-   }else{
+-     Adios(nombre, callback);
+-   }
+- }
+
+
+///////////////////////////////// funcion es recursivas /////////////////////////////////
+
