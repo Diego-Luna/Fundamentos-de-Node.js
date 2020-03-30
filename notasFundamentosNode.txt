@@ -69,3 +69,23 @@ ejemplo:
 
 ///////////////////////////////// funcion es recursivas /////////////////////////////////
 
+///////////////////////////////// Globals /////////////////////////////////
+
+En Node tenemos el objeto "global" que contiene los metodos y propiedades basicas que usamos Node;ej(setTimeOut)
+
+  "global" es un equivalente de this en el navegador
+
+En Node "this" es un alias de global
+
+- this === global //true
+
+Algunos metodos que se incluyen en el "global" objeto son:
+
+* setTimeOut: se encarga de llamar a otra funcion despues de un periodo de tiempo.
+* setInterval: llama a tra funcion cada intervalo de tiempo.
+* setImmediate: equivalente a setTimeOut pero con tiempo 0.
+* clearTimeOut: detiene un setTimeOut.
+* clearInterval: detiene un setInterval.
+
+///////////////////////////////// Globals /////////////////////////////////
+
