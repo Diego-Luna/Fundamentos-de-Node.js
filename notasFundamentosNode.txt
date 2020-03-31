@@ -89,3 +89,13 @@ Algunos metodos que se incluyen en el "global" objeto son:
 
 ///////////////////////////////// Globals /////////////////////////////////
 
+///////////////////////////////// File system /////////////////////////////////
+
+En node podemos crear, editar y eliminar archivos desde el servidor. La mayoria de estas acciones tienen metodos sincronos y asincronos, por ejemplo readFile y readFileSync.
+
+“Use readFile siempre que sea posible, readFileSync bloquea el hilo mientras la solicitud es resuelta.”
+
+estan el el archivo : "modulos/fs.js"
+
+///////////////////////////////// File system /////////////////////////////////
+
