@@ -117,6 +117,15 @@ console.group: permite agrupar errores mediante identación.
 console.groupEnd: finaliza la agrupación.
 console.clear: Limpia la consola.
 
-
 ///////////////////////////////// Console /////////////////////////////////
+
+///////////////////////////////// Errores (Try/Catch) /////////////////////////////////
+
+Cuando se genera un error, node propaga el error hacia arriba, hasta que esta es caputado. si el error no se captura node se detiene.
+
+Siempre que sea posible debemos capturar todos los errores que se puedan generar en nuestros hilos.
+
+ejemplos: "modulos/errores.js"
+
+///////////////////////////////// Errores (Try/Catch) /////////////////////////////////
 
