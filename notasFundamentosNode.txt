@@ -104,18 +104,18 @@ estan el el archivo : "modulos/fs.js"
 Con console podemos imprimir todo tipo de valores por
 nuestra terminal.
 
-console.log: recibe cualquier tipo y lo muestra en el consola.
-console.info: es equivalente a log pero es usado para informar.
-console.error: es equivalente a log pero es usado para errores.
-console.warn: es equivalente a log pero es usado para warning.
-console.table: muestra una tabla a partir de un objeto.
-console.count: inicia un contador autoincremental.
-console.countReset: reinicia el contador a 0.
-console.time: inicia un cronometro en ms.
-console.timeEnd: Finaliza el cronometro.
-console.group: permite agrupar errores mediante identación.
-console.groupEnd: finaliza la agrupación.
-console.clear: Limpia la consola.
+- console.log: recibe cualquier tipo y lo muestra en el consola.
+- console.info: es equivalente a log pero es usado para informar.
+- console.error: es equivalente a log pero es usado para errores.
+- console.warn: es equivalente a log pero es usado para warning.
+- console.table: muestra una tabla a partir de un objeto.
+- console.count: inicia un contador autoincremental.
+- console.countReset: reinicia el contador a 0.
+- console.time: inicia un cronometro en ms.
+- console.timeEnd: Finaliza el cronometro.
+- console.group: permite agrupar errores mediante identación.
+- console.groupEnd: finaliza la agrupación.
+- console.clear: Limpia la consola.
 
 ///////////////////////////////// Console /////////////////////////////////
 
@@ -128,4 +128,29 @@ Siempre que sea posible debemos capturar todos los errores que se puedan generar
 ejemplos: "modulos/errores.js"
 
 ///////////////////////////////// Errores (Try/Catch) /////////////////////////////////
+
+///////////////////////////////// Procesos hijo /////////////////////////////////
+
+En node podemos crear procesos hijos que ejecuten cualquier accion de nuestro sistema operativo, como si nos encontraramos en la linea de comandos.
+
+Podemos llamar a exec para ejecuciones sencillas:
+
+- const { exec } = require('child_process')
+- exec('ls', (e, stdout) => {
+-     (e) ?
+-     console.log(e) :
+-     console.log(stdout)
+- })
+
+Podemos llamar a spawn para obtener el proceso: La ventaja de este enfoque es que obtienes mayor control del proceso, y del estado en el que se encuenta
+
+- const { spawn } = require('child_process')
+- const myprocess = spawn('ls')
+
+- process.stdout.on("data", data => console.log(data.toString()));
+- process.on("exit", () => console.log("process end"));
+
+ejemplos: "modulos/procesoHijo.js"
+
+///////////////////////////////// Procesos hijo /////////////////////////////////
 
