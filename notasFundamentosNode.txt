@@ -242,3 +242,10 @@ ejemplo: "memoria/Streams.js"
 
 ///////////////////////////////// Streams /////////////////////////////////
 
+///////////////////////////////// Benchmarking (console time y timeEnd) /////////////////////////////////
+
+Usamos el "console.time('tiempo');", para saber cuanto timepo lleva ejecutar una parte o todo el codigo.
+ejemplo: "trucos/benchmarking.js"
+
+///////////////////////////////// Benchmarking (console time y timeEnd) /////////////////////////////////
+
